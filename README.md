@@ -1,6 +1,6 @@
 ## PlatesCo-Case-Study
 * Open index page with any browser
-* As the product is added to the cart, (item.price * item.numberOfUnits) runs the process.
+* As the product is added to the cart, ```item.price * item.numberOfUnits``` runs the process.
 * If there is a discount, the discounted amount is subtracted from the total price
 * As the last step Shipping prices are added.
 
