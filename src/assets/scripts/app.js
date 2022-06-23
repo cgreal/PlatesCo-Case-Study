@@ -49,7 +49,6 @@ function addToCart(id) {
       ...item,
       numberOfUnits: 1,
     });
-    console.log("ne", cart);
   }
 
   updateCart();
@@ -70,7 +69,6 @@ function renderSubtotal() {
     totalItems = 0;
 
   cart.forEach((item) => {
-    console.log(item);
     if (item.id === 0 && item.numberOfUnits > 0) {
       totalPrice -=
         ((item.numberOfUnits - (item.numberOfUnits % 2)) / 2) *
@@ -102,7 +100,6 @@ function renderCartItems() {
   cartItemsEl.innerHTML = ""; // clear cart element
   cart.forEach((item) => {
     if (item.numberOfUnits > 0) {
-      console.log(item.imgSrc);
       cartItemsEl.innerHTML += `
       <div class="cart-item">
           <div class="item-info" onclick="removeItemFromCart(${item.id})">
